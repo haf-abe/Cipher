@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="cipher.css">
+        <script src="cipher.js"></script>
+    </head>
+
+
+    <body>
+        <div class="container1"> 
+            <div id="header">
+                <h3>Caesar-cipher (aka shift cipher)</h3>
+            </div> 
+
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-sm-3 col-md-6 col-lg-4" id="Julius">
+                    <p><img src="Julius Caesar.jpg" alt=""></p>
+                    <p><i>Julius-Caesar</i></p>
+                    </div>
+
+                    <div class="col-sm-9 col-md-6 col-lg-8">
+                    
+                        <textarea id = "textArea" placeholder="Insert your message here" cols="40" oninput="enDeCode()"></textarea>
+
+                        <label for="shift"> Choose Shift pattern</label>
+                        <input type="number" value="3" id="shift" onchange="enDeCode()">
+                        <p>
+                           <label for="encode"> Encode</label> 
+                           <input  type ="radio" id ="encode" name="cipher" checked onchange="enDeCode()">
+
+                           <label for="decodcode"> Decode</label> 
+                           <input type ="radio" id="decode" name="cipher" onchange="enDeCode()">
+                        </p>
+                        <label for="output"> </label>
+                        <textarea name="" id="output" cols="40"  placeholder="Your encrypted message will be shown here"></textarea>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        
+    </body>
+</html>
